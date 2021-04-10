@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.example.ludoworld">
+    <uses-permission android:required="true"
+                     android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission
+            android:required="true"
+            android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission
+            android:required="true"
+            android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission
+            android:required="true"
+            android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission
+            android:required="true"
+            android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"
+                     android:required="true"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"
+                     android:required="true"/>
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Ludo World"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".PlayInternetGame"></activity>
+        <activity android:name=".SelectColorONInternetGame"></activity>
+        <activity android:name=".CreateORSelectRoom"></activity>
+        <activity android:name=".InternetGame"></activity>
+        <activity android:name=".ComputerGame"></activity>
+        <activity android:name=".PlayerNamingComputer"></activity>
+        <activity android:name=".PlayComputerGame"></activity>
+        <activity android:name=".LocalGame"></activity>
+        <activity android:name=".PlayerNaming"></activity>
+        <activity android:name=".PlayLocalGame"></activity>
+        <activity android:name=".MainActivity"
+            android:configChanges="keyboardHidden">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
